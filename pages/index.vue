@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        birthday
+        Hello
       </h1>
       <h2 class="subtitle">
         birthday template
