@@ -1,6 +1,9 @@
 <template>
   <div>
     <section id="b-intro">
+      <client-only>
+        <wind-banners></wind-banners>
+      </client-only>
       <b-container>
         <b-row>
           <b-col cols="12">
@@ -14,6 +17,8 @@
 
 <script>
 export default {
-  components: {},
+  components: {
+    'wind-banners': () => import('@/components/WindBanners.vue')
+  }
 }
 </script>
