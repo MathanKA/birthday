@@ -1,6 +1,6 @@
 .banner {
   width: 800px;
-  height: 100px;
+  height: 150px;
   border: 0px dotted cyan;
   position: relative;
   transform-style: preserve-3d;
@@ -46,7 +46,7 @@
 
 @supports (offset-path: path("M0,0 C100,50 500,100 700,0")) {
   .banner {
-    height: 230px;
+    height: 150px;
   }
   .banner:nth-of-type(even) {
     --transform: rotate(0deg);

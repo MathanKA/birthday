@@ -1,0 +1,101 @@
+
+
+
+.balloons {
+  // position: absolute;
+}
+.balloon {
+  display:inline-block;
+  width:126px;
+  height:150px;
+  background:#8249c1;
+  position:absolute;
+  left: 0px;
+  top:0px;
+  box-shadow:inset -10px -10px 0 rgba(0,0,0,0.07);
+  margin:20px 30px;
+  transition:transform 0.5s ease;
+  z-index:10;
+  animation: balloons 4s ease-in-out infinite, shine 3s infinite;
+  transform-origin:bottom center;
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+}
+
+@keyframes balloons {
+  0%,100%{ transform:translateY(0) rotate(-4deg); }
+  50%{ transform:translateY(-25px) rotate(4deg); }
+}
+
+
+
+.balloon:before {
+  content:"▲";
+  font-size:20px;
+  color:hsl(215,30%,50%);
+  display:block;
+  text-align:center;
+  width:100%;
+  position:absolute;
+  bottom:-12px;
+  z-index: 1;
+}
+
+.balloon:after {
+ display:inline-block; 
+  top:153px;
+  left: 50px;
+  position:absolute;
+  height:155px;
+  width:28px;
+  margin:0 auto;
+  content:"";
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiA+CjxnIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZWVlIj4KPHBhdGggaWQ9ImMiIGQ9Im0xNSwwcS0yNSwyNSAwLDUwIDI1LDI1IDAsNTAtMjUsMjUgMCw1MCIvPgo8L2c+Cjwvc3ZnPgo=")  
+}
+
+.b1 {
+  top: -70px;
+  left: 25px;
+}
+.b2 {
+  left: 70px;
+  top: 20px;
+}
+.b3 {
+  left: -70px;
+  top: -15px;
+}
+.b4 {
+  top: 55px;
+}
+.b5 {
+  top: -100px;
+  left: 100px;
+}
+
+.shade:before {
+    position: absolute;
+    content: '';
+    top: 20%;
+    left: 10%;
+    width: 24%;
+    height: 30%;
+    border-radius: 47%;
+    background-color: #ffffffa6;
+    transform: rotate(16deg);
+}
+
+.balloon:nth-child(2){ 
+  background:#59cfcb; 
+  animation-duration:3.5s;
+   }
+.balloon:nth-child(2):before { color: #59cfcb;  }
+
+.balloon:nth-child(3){ background:hsl(139,50%,60%); animation-duration:3s; }
+.balloon:nth-child(3):before { color:hsl(139,30%,50%);  }
+
+.balloon:nth-child(4){ background:#f1803a; animation-duration:4.5s; }
+.balloon:nth-child(4):before { color:#f1803a;  }
+
+.balloon:nth-child(5){ background:#ec55b3; animation-duration:5s; }
+.balloon:nth-child(5):before { color:#ec55b3;  }
+
