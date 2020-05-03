@@ -1,7 +1,148 @@
 #b-intro {
-  height: 100vh;
-  background-color: #000;
+  // height: 100vh;
   h1 {
     font-size: 4rem;
+  }
+}
+
+.flying-balloons {
+  width: 100%;
+  height:100%;
+  position:absolute;
+  pointer-events: none;
+  z-index: 9999;
+  top:0;
+}
+.b-cake {
+  position: relative;
+  img {
+    height: 500px;
+    width: 500px;
+  }
+
+  /* ============================================== Candle
+*/
+  .velas {
+    background: #03A9F4;
+    border-radius: 10px;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-left: -2.4px;
+    margin-top: -8.33333333px;
+    width: 6px;
+    height: 60px;
+    transform: translateY(-600px);
+    backface-visibility: hidden;
+    animation: in 500ms 2s ease-out forwards;
+  }
+
+  .velas:after,
+  .velas:before {
+    background: #ffffff;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+  }
+
+  .velas:after {
+    top: 30%;
+    left: 0;
+  }
+
+  .velas:before {
+    top: 75%;
+    left: 0;
+  }
+
+  /* ============================================== Fire
+*/
+  .fuego {
+    border-radius: 100%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -2.6px;
+    width: 6.66666667px;
+    height: 18px;
+  }
+
+  .fuego:nth-child(1) {
+    animation: fuego 2s 0s infinite;
+  }
+
+  .fuego:nth-child(2) {
+    animation: fuego 1.5s 0s infinite;
+  }
+
+  .fuego:nth-child(3) {
+    animation: fuego 1s 0s infinite;
+  }
+
+  .fuego:nth-child(4) {
+    animation: fuego 0.5s 0s infinite;
+  }
+
+  .fuego:nth-child(5) {
+    animation: fuego 0.2s 0s infinite;
+  }
+
+  /* ============================================== Animation Fire
+*/
+  @keyframes fuego {
+    0%,
+    100% {
+      background: rgba(254, 248, 97, 0.5);
+      box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      background: rgba(255, 50, 0, 0.1);
+      box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+      transform: translateY(-20px) scale(0);
+    }
+  }
+  @keyframes in {
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  // Smoke css
+
+  .candle-thread {
+    position: absolute;
+    width: 1px;
+    height: 6px;
+    background: #0e0b0b;
+    top: -9%;
+    left: 50%;
+  }
+  .smoke {
+    position: absolute;
+    width: 3px;
+    height: 25px;
+    border-radius: 50%;
+    background: #5d5959bf;
+    top: 0%;
+    left: 0;
+    animation: animeSmoke 2.2s 2 ease-in-out;
+    z-index: -1;
+    opacity: 0;
+  }
+  @keyframes animeSmoke {
+    0% {
+      opcity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    
+    100% {
+      transform: translate(30px, -120px);
+      filter: blur(10px);
+      opacity: 0;
+    }
   }
 }
