@@ -15,7 +15,7 @@
           </div>
         </div>
       </div>
-      <b-img src="~/static/bb-cake.svg"></b-img>
+      <b-img src="~/static/cake.svg"></b-img>
     </div>
   </div>
 </template>
@@ -53,10 +53,10 @@ export default {
       if (!this.isFireOn) {
         this.initFireConfetti()
         this.$emit('releaseBalloons')
+        setTimeout(() => {
+          this.$emit('releaseBalloons')
+        }, 20000)
       }
-      setTimeout(() => {
-        this.$emit('releaseBalloons')
-      }, 20000)
     },
     initFireConfetti() {
       const ele = document.getElementById('fireConfetti')

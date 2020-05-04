@@ -16,6 +16,15 @@
       <div class="balloon b5">
         <div class="shade"></div>
       </div>
+      <div class="balloon b6">
+        <div class="shade"></div>
+      </div>
+      <div class="balloon b7">
+        <div class="shade"></div>
+      </div>
+      <div class="balloon b8">
+        <div class="shade"></div>
+      </div>
     </div>
   </div>
 </template>

@@ -13,17 +13,19 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Raleway:500,700,800&display=swap'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    script: []
   },
   /*
    ** Customize the progress-bar color

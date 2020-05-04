@@ -10,12 +10,7 @@
             <balloon-group></balloon-group>
           </b-col>
           <b-col cols="8" class="text-center">
-            <h1>
-              HELLO WORLD
-            </h1>
-            <!-- <client-only>
-              <fire-confetti :fire-confetti="fireConfetti"></fire-confetti>
-            </client-only> -->
+            <wish></wish>
             <cake @releaseBalloons="triggerBalloons"></cake>
           </b-col>
           <b-col cols="2">
@@ -28,19 +23,32 @@
         ></balloons>
       </b-container>
     </section>
+    <section id="b-info">
+      <b-container>
+        <b-row class="mt-3">
+          <b-col cols="8">
+            <photo-booth></photo-booth>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
   </div>
 </template>
 
 <script>
 import BalloonGroup from '@/components/BalloonGroup'
 import Cake from '@/components/Cake'
+import PhotoBooth from '@/components/PhotoBooth'
+import Wish from '@/components/Wish'
 // import FireConfetti from '@/components/FireConfetti'
 export default {
   components: {
     'wind-banners': () => import('@/components/WindBanners.vue'),
     balloons: () => import('@/components/Balloons.vue'),
     BalloonGroup,
-    Cake
+    Cake,
+    PhotoBooth,
+    Wish
   },
   data() {
     return { releaseBalloons: false, balloonKey: 0 }

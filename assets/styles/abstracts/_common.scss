@@ -1,9 +1,43 @@
 #b-intro {
-  // height: 100vh;
-  h1 {
-    font-size: 4rem;
-  }
+  padding-bottom: 10rem;
+  background-image: radial-gradient(circle, #f4a4b9, #fb8aa4, #ff6e8c, #ff4c71, #ff1654);
+  background-color: #ff6e8c;
 }
+
+#b-info {
+  position: relative;
+  background-color: #57BABC;
+  padding: 7rem 0rem;
+  &:before {
+    background-image: url('~static/wave-green.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: auto;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    pointer-events: none;
+    top: -28%;
+    content: '';
+    height: 200px;
+    width: 100%;
+  }
+} 
+
+
+// .wave {
+//   position: absolute;
+//   left: 0;
+//   width: 100%;
+//   line-height: 0;
+//   -webkit-backface-visibility: visible;
+//   backface-visibility: visible;
+//   pointer-events: none;
+//   top: -25%;
+// }
 
 .flying-balloons {
   width: 100%;

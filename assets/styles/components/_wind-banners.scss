@@ -16,7 +16,7 @@
   display: flex;
   height: 70px;
   width: 45px;
-  background: hsl(var(--hue, 43), 90%, 55%);
+  background: hsl(var(--hue), 50%, 60%);
   color: hsl(43, 90%, var(--text, 5%));
   clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
   transform-origin: 50% 0%;
@@ -28,20 +28,24 @@
   display: none;
 }
 .flag:nth-of-type(odd) {
-  --hue: 343;
+  --hue: 139;
+  --text: 95%;
+}
+.flag:nth-of-type(even) {
+  --hue: 269;
   --text: 95%;
 }
 .banner:nth-of-type(even) .flag:nth-of-type(even) {
-  --hue: 333;
+  --hue: 175;
 }
 .banner:nth-of-type(even) .flag:nth-of-type(odd) {
-  --hue: 193;
+  --hue: 299;
 }
 .banner:nth-of-type(3) .flag:nth-of-type(odd) {
-  --hue: 33;
+  --hue: 139;
 }
 .banner:nth-of-type(3) .flag:nth-of-type(even) {
-  --hue: 173;
+  --hue: 178;
 }
 
 @supports (offset-path: path("M0,0 C100,50 500,100 700,0")) {

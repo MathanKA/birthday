@@ -1,0 +1,27 @@
+@each $key, $item in $colors {
+  .cy-text-#{$key} {
+    color: $item !important;
+  }
+
+  .cy-bg-#{$key} {
+    background-color: $item !important;
+  }
+
+  .cy-border-color-#{$key} {
+    border-color: $item !important;
+  }
+
+  .cy-border-top-#{$key} {
+    border-top: 1px solid $item !important;
+  }
+
+  .cy-border-bottom-#{$key} {
+    border-bottom: 1px solid $item !important;
+  }
+
+  .cy-underline-#{$key} {
+    &:after {
+      background-color: $item !important;
+    }
+  }
+}
