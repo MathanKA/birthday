@@ -19,7 +19,7 @@
         <g id="A3-Copy" transform="translate(-63.000000, -64.000000)">
             <g id="Fill-6">
                 <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                <use fill-opacity="0.754616477" fill="#FF1654" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use fill-opacity="1" fill="#ff4c71" fill-rule="evenodd" xlink:href="#path-1"></use>
                 <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
             </g>
         </g>

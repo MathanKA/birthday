@@ -22,7 +22,7 @@ module.exports = {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Raleway:500,700,800&display=swap'
+          'https://fonts.googleapis.com/css?family=Montserrat+Alternates:500,700,800&display=swap'
       }
     ],
     script: []

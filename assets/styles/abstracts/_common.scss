@@ -6,8 +6,9 @@
 
 #b-info {
   position: relative;
+  background-image: linear-gradient(to bottom, #57babc, #5ec0c1, #66c5c7, #6dcbcc, #74d1d2);
   background-color: #57BABC;
-  padding: 7rem 0rem;
+  padding: 5rem 0rem;
   &:before {
     background-image: url('~static/wave-green.svg');
     background-repeat: no-repeat;
@@ -15,12 +16,11 @@
     background-size: auto;
     position: absolute;
     left: 0;
-    width: 100%;
     line-height: 0;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
     pointer-events: none;
-    top: -28%;
+    top: -27%;
     content: '';
     height: 200px;
     width: 100%;

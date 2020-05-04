@@ -1,18 +1,52 @@
 .photo-frame {
+  &:before {
+    background-image: url('~static/mustache.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    position: absolute;
+    left: 26%;
+    top: 30%;
+    content: '';
+    height: 135px;
+    width: 320px;
+  }
+  &:after {
+    background-image: url('~static/cone.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    position: absolute;
+    left: 35%;
+    top: -5%;
+    content: '';
+    height: 140px;
+    width: 125px;
+    transform: rotate(20deg);
+  }
   background-image: url('~static/photo-frame.svg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100%;
   position: relative;
-  height: 450px;
-  width: 480px;
+  height: 550px;
+  width: 90%;
+  transition: transform 0.3s ease-in;
+  &:hover {
+    &:before {
+      transform: scale(1, 2.3);
+    }
+    &:after {
+      transform: translateY(-20px);
+    }
+  }
 }
 
 .photo {
   position: absolute;
-  height: 300px;
+  height: 380px;
   width: auto;
   left: 25%;
   top: 10%;
-  border-radius: 25%;
+  border-radius: 0 0 60% 80%;
 }

@@ -25,9 +25,16 @@
     </section>
     <section id="b-info">
       <b-container>
-        <b-row class="mt-3">
+        <b-row>
           <b-col cols="8">
             <photo-booth></photo-booth>
+          </b-col>
+          <b-col cols="4" class="align-self-center">
+            <p class="text-center">
+              Sometimes, we may feel who we are, who we want to be, where
+              exactly we supposed to be. but if you notice closely, everything
+              will make sense.
+            </p>
           </b-col>
         </b-row>
       </b-container>
