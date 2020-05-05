@@ -1,13 +1,27 @@
 #b-intro {
   padding-bottom: 10rem;
-  background-image: radial-gradient(circle, #f4a4b9, #fb8aa4, #ff6e8c, #ff4c71, #ff1654);
+  background-image: radial-gradient(
+    circle,
+    #f4a4b9,
+    #fb8aa4,
+    #ff6e8c,
+    #ff4c71,
+    #ff1654
+  );
   background-color: #ff6e8c;
 }
 
 #b-info {
   position: relative;
-  background-image: linear-gradient(to bottom, #57babc, #5ec0c1, #66c5c7, #6dcbcc, #74d1d2);
-  background-color: #57BABC;
+  background-image: linear-gradient(
+    to bottom,
+    #57babc,
+    #5ec0c1,
+    #66c5c7,
+    #6dcbcc,
+    #74d1d2
+  );
+  background-color: #57babc;
   padding: 5rem 0rem;
   &:before {
     background-image: url('~static/wave-green.svg');
@@ -25,8 +39,7 @@
     height: 200px;
     width: 100%;
   }
-} 
-
+}
 
 // .wave {
 //   position: absolute;
@@ -41,11 +54,11 @@
 
 .flying-balloons {
   width: 100%;
-  height:100%;
-  position:absolute;
+  height: 100%;
+  position: absolute;
   pointer-events: none;
   z-index: 9999;
-  top:0;
+  top: 0;
 }
 .b-cake {
   position: relative;
@@ -57,7 +70,7 @@
   /* ============================================== Candle
 */
   .velas {
-    background: #03A9F4;
+    background: #03a9f4;
     border-radius: 10px;
     position: absolute;
     top: 85px;
@@ -172,11 +185,69 @@
     90% {
       opacity: 1;
     }
-    
+
     100% {
       transform: translate(30px, -120px);
       filter: blur(10px);
       opacity: 0;
+    }
+  }
+}
+
+#footer {
+  .heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+  }
+  .heart:before,
+  .heart:after {
+    position: absolute;
+    content: '';
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #ac1c54;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  .heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+
+  .pulse {
+    animation: pulsing 01s infinite;
+  }
+  @keyframes pulsing {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
     }
   }
 }

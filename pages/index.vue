@@ -30,10 +30,13 @@
             <photo-booth></photo-booth>
           </b-col>
           <b-col cols="4" class="align-self-center">
-            <p class="text-center">
-              Sometimes, we may feel who we are, who we want to be, where
-              exactly we supposed to be. but if you notice closely, everything
-              will make sense.
+            <p class="text-left">
+              <span style="font-size: 2rem;">&ldquo;</span>Sometimes, we may
+              feel who we are, who we want to be, where exactly we supposed to
+              be. but if you notice closely, everything will make sense.<span
+                style="font-size: 2rem;"
+                >&rdquo;</span
+              >
             </p>
           </b-col>
         </b-row>

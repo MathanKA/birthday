@@ -1,12 +1,16 @@
 <template>
   <div>
     <nuxt />
+    <b-footer></b-footer>
   </div>
 </template>
 
 <script>
+import BFooter from '@/components/BFooter'
 export default {
-  components: {}
+  components: {
+    BFooter
+  }
 }
 </script>
 
