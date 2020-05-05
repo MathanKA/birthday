@@ -1,3 +1,27 @@
+@media (min-width: 992px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+.mobile {
+  height: calc(100vh - 40px);
+  h1 {
+    line-height: 1.5;
+  }
+}
+
 #b-intro {
   padding-bottom: 10rem;
   background-image: radial-gradient(
