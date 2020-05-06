@@ -1,83 +1,14 @@
+/* eslint-disable vue/no-parsing-error */
 <template>
   <div>
-    <!-- <div class="🐕">
-      <div class="torso">
-        <div class="fur">
-          <div class="spot"></div>
-        </div>
-        <div class="neck">
-          <div class="fur"></div>
-          <div class="head">
-            <div class="fur">
-              <div class="snout"></div>
-            </div>
-            <div class="ears">
-              <div class="ear">
-                <div class="fur"></div>
-              </div>
-              <div class="ear">
-                <div class="fur"></div>
-              </div>
-            </div>
-            <div class="eye"></div>
-          </div>
-          <div class="collar"></div>
-        </div>
-        <div class="legs">
-          <div class="leg">
-            <div class="fur"></div>
-            <div class="leg-inner">
-              <div class="fur"></div>
-            </div>
-          </div>
-          <div class="leg">
-            <div class="fur"></div>
-            <div class="leg-inner">
-              <div class="fur"></div>
-            </div>
-          </div>
-          <div class="leg">
-            <div class="fur"></div>
-            <div class="leg-inner">
-              <div class="fur"></div>
-            </div>
-          </div>
-          <div class="leg">
-            <div class="fur"></div>
-            <div class="leg-inner">
-              <div class="fur"></div>
-            </div>
-          </div>
-        </div>
-        <div class="tail">
-          <div class="tail">
-            <div class="tail">
-              <div class="tail -end">
-                <div class="tail">
-                  <div class="tail">
-                    <div class="tail">
-                      <div class="tail"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div ref="preloader" class="preloader">
       <div class="preloader__status">
         <div ref="status" class="preloader__status-text text-center">
-          <p class="b-statements">
-            <span v-if="loaded <= 20"
-              >Wait, Floor is getting ready for birthday baby...</span
-            >
-            <span v-if="loaded > 21 && loaded < 75"
-              >meanwhile, tell me Is it true that ?</span
-            >
-            <span v-if="loaded > 76">Here you go...</span>
-          </p>
+          <transition name="fade" mode="out-in">
+            <p :key="loadText()" class="b-statements">
+              {{ loadText() }}
+            </p>
+          </transition>
         </div>
         <div class="preloader__status-loader">
           <div
@@ -96,6 +27,7 @@
 
 <script>
 /* eslint-disable no-unused-vars */
+/* eslint-disable vue/no-parsing-error */
 export default {
   data() {
     return {
@@ -119,6 +51,17 @@ export default {
     this.startLoading()
   },
   methods: {
+    loadText() {
+      const text =
+        this.loaded <= 40
+          ? 'Wait, Floor is getting ready for birthday baby...'
+          : this.loaded > 41 && this.loaded < 80
+          ? 'meanwhile, tell me Is it true that ?'
+          : this.loaded > 81
+          ? 'Here we go, for my birthday baby...'
+          : ''
+      return text
+    },
     removeScrolling() {
       document.querySelector('body').style.overflowX = 'hidden'
     },

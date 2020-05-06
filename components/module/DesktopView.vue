@@ -10,8 +10,12 @@
             <balloon-group></balloon-group>
           </b-col>
           <b-col cols="8" class="text-center">
-            <wish></wish>
-            <cake @releaseBalloons="triggerBalloons"></cake>
+            <wish data-aos="zoom-in" data-aos-delay="300"></wish>
+            <cake
+              data-aos="zoom-in-up"
+              data-aos-delay="350"
+              @releaseBalloons="triggerBalloons"
+            ></cake>
           </b-col>
           <b-col cols="2">
             <balloon-group></balloon-group>
@@ -32,7 +36,7 @@
             <photo-booth></photo-booth>
           </b-col>
           <b-col cols="4" class="align-self-center">
-            <p class="text-left">
+            <p class="text-left" data-aos="slide-left">
               <span style="font-size: 2rem;">&ldquo;</span>Sometimes, we may
               feel who we are, who we want to be, where exactly we supposed to
               be. but if you notice closely, everything will make sense.<span

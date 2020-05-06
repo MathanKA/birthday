@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="balloons">
+    <div class="balloons" data-aos="zoom-in" data-aos-delay="200">
       <div class="balloon b1">
         <div class="shade"></div>
       </div>

@@ -1,6 +1,6 @@
 <template>
   <b-row class="w-100 mx-0 flex-nowrap">
-    <div class="banner">
+    <div class="banner" data-aos="slide-down" data-aos-delay="100">
       <span class="flag"></span>
       <span class="flag"></span>
       <span class="flag"></span>
@@ -17,7 +17,7 @@
         </svg>
       </span>
     </div>
-    <div class="banner">
+    <div class="banner" data-aos="slide-down" data-aos-delay="100">
       <span class="flag"></span>
       <span class="flag"></span>
       <span class="flag"></span>

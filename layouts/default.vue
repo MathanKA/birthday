@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import AOS from 'aos'
 import BFooter from '@/components/BFooter'
 import BLoader from '@/components/BLoader'
 export default {
@@ -21,7 +22,11 @@ export default {
       isLoaded: false
     }
   },
-  mounted() {}
+  mounted() {
+    AOS.init({
+      offset: 200
+    })
+  }
 }
 </script>
 

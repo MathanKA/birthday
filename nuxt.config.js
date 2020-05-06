@@ -21,6 +21,10 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       {
         rel: 'stylesheet',
+        href: 'https://unpkg.com/aos@next/dist/aos.css'
+      },
+      {
+        rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Montserrat+Alternates:500,700,800&display=swap'
       }
