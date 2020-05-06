@@ -101,9 +101,7 @@ export default {
       this.body.removeAttr('style')
       this.animateWebsite()
     },
-    animateWebsite() {
-      console.log('lets get pretty')
-    }
+    animateWebsite() {}
   }
 }
 </script>

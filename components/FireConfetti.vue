@@ -42,7 +42,6 @@ export default {
   watch: {
     fireConfetti(newVal) {
       if (newVal) {
-        console.log(newVal)
         this.initFireConfetti()
       }
     }

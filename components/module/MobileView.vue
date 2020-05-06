@@ -6,7 +6,7 @@
           <b-col class="text-center align-self-center">
             <h1>
               Hey Baby, <br />
-              Seems you are viewing in small devices <br />
+              Seems you are viewing in small device <br />
               Sorry, this small space is not enough to celebrate your
               "Birthday"<br />
               <strong>Please open it in Laptop</strong>
