@@ -62,10 +62,11 @@ function Init() {
   Draw();
 }
 
-setTimeout(function() {
-  Init();
-  window.addEventListener('resize', Init, false);
-}, 15);
+Init();
+// setTimeout(function() {
+//   Init();
+//   window.addEventListener('resize', Init, false);
+// }, 15);
 
 function updateBallons(ctx) {
   frames += 1;

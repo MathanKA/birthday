@@ -17,10 +17,12 @@
             <balloon-group></balloon-group>
           </b-col>
         </b-row>
-        <balloons
-          class="flying-balloons"
-          :release-balloons="releaseBalloons"
-        ></balloons>
+        <client-only>
+          <balloons
+            class="flying-balloons"
+            :release-balloons="releaseBalloons"
+          ></balloons>
+        </client-only>
       </b-container>
     </section>
     <section id="b-info">
@@ -50,18 +52,19 @@ import BalloonGroup from '@/components/BalloonGroup'
 import Cake from '@/components/Cake'
 import PhotoBooth from '@/components/PhotoBooth'
 import Wish from '@/components/Wish'
-// import FireConfetti from '@/components/FireConfetti'
+// import Balloons from '@/components/Balloons'
 export default {
   components: {
     'wind-banners': () => import('@/components/WindBanners.vue'),
     balloons: () => import('@/components/Balloons.vue'),
+    // Balloons,
     BalloonGroup,
     Cake,
     PhotoBooth,
     Wish
   },
   data() {
-    return { releaseBalloons: false, balloonKey: 0 }
+    return { releaseBalloons: false }
   },
   methods: {
     triggerBalloons() {

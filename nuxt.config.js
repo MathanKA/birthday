@@ -42,11 +42,11 @@ module.exports = {
     {
       src: '~/plugins/dom-confetti.js',
       mode: 'client'
-    },
-    {
-      src: '~/plugins/balloons.js',
-      mode: 'client'
     }
+    // {
+    //   src: '~/plugins/balloons.js',
+    //   mode: 'client'
+    // }
   ],
   /*
    ** Nuxt.js dev-modules

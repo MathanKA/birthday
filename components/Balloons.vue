@@ -6,9 +6,10 @@
 
 <script>
 /* eslint-disable */
+const BalloonInit = require('@/assets/scripts/balloons.js')
 export default {
   props: {
-    releaseBalloons : {
+    releaseBalloons: {
       type: Boolean,
       default: false
     }
@@ -16,12 +17,18 @@ export default {
   watch: {
     releaseBalloons(newVal) {
       if (newVal) {
-        this.$forceUpdate();
+        this.$forceUpdate()
       }
     }
   },
   mounted() {
-
+    this.initBalloons()
+  },
+  methods: {
+    initBalloons () {
+      const eleB = document.getElementById('balloons')
+      window.balloon(eleB)
+    }
   }
 }
 </script>
