@@ -48,6 +48,15 @@
         </b-row>
       </b-container>
     </section>
+    <section id="b-wheel">
+      <b-container>
+        <b-row>
+          <b-col cols="6" class="justify-content-center">
+            <!-- <wheel-spin></wheel-spin> -->
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
   </div>
 </template>
 
@@ -56,6 +65,7 @@ import BalloonGroup from '@/components/BalloonGroup'
 import Cake from '@/components/Cake'
 import PhotoBooth from '@/components/PhotoBooth'
 import Wish from '@/components/Wish'
+// import WheelSpin from '@/components/WheelSpin'
 // import Balloons from '@/components/Balloons'
 export default {
   components: {
@@ -66,6 +76,7 @@ export default {
     Cake,
     PhotoBooth,
     Wish
+    // WheelSpin
   },
   data() {
     return { releaseBalloons: false }
