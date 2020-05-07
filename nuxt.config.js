@@ -15,8 +15,60 @@ module.exports = {
   head: {
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'apple-mobile-web-app-title',
+        hid: 'apple-mobile-web-app-title',
+        content: 'Happy Birthday, Amit!'
+      },
+      {
+        hid: 'title',
+        name: 'title',
+        content: 'Happy Birthday, Amit!'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Hi baby, Its your birthday and here a small gift for you. Check it out...'
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          'Hi baby, Its your birthday and here a small gift for you. Check it out...'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Hi baby, Its your birthday and here a small gift for you. Check it out...'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Hi baby, Its your birthday and here a small gift for you. Check it out...'
+      },
+      // { hid: 'og:image', property: 'og:image', content: meta.image },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Happy Birthday, Amit!'
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Happy Birthday, Amit!'
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Hi baby, Its your birthday and here a small gift for you. Check it out...'
+      }
     ],
+    title: 'Happy Birthday,Amit!',
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       {
