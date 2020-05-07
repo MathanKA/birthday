@@ -34,7 +34,21 @@ module.exports = {
           'https://fonts.googleapis.com/css?family=Montserrat+Alternates:500,700,800&display=swap'
       }
     ],
-    script: []
+    script: [
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'
+      },
+      {
+        src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/tweenmax.min.js'
+      },
+      {
+        src:
+          'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/jquery.superscrollorama.js'
+      },
+      {
+        src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/iscroll.js'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -50,6 +64,10 @@ module.exports = {
   plugins: [
     {
       src: '~/plugins/dom-confetti.js',
+      mode: 'client'
+    },
+    {
+      src: '~/assets/scripts/giftbox.js',
       mode: 'client'
     }
     // {

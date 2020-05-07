@@ -57,6 +57,9 @@
         </b-row>
       </b-container>
     </section>
+    <section class="position-relative">
+      <gift-box></gift-box>
+    </section>
   </div>
 </template>
 
@@ -65,6 +68,7 @@ import BalloonGroup from '@/components/BalloonGroup'
 import Cake from '@/components/Cake'
 import PhotoBooth from '@/components/PhotoBooth'
 import Wish from '@/components/Wish'
+import GiftBox from '@/components/GiftBox'
 // import WheelSpin from '@/components/WheelSpin'
 // import Balloons from '@/components/Balloons'
 export default {
@@ -75,7 +79,8 @@ export default {
     BalloonGroup,
     Cake,
     PhotoBooth,
-    Wish
+    Wish,
+    GiftBox
     // WheelSpin
   },
   data() {
