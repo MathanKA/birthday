@@ -82,7 +82,8 @@ export default {
           src: '/iscroll.js'
         },
         {
-          src: '/giftbox.js'
+          src: '/giftbox.js',
+          defer: true
         }
       ]
     }

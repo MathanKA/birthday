@@ -96,13 +96,13 @@ module.exports = {
       {
         src:
           'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/jquery.superscrollorama.js'
-      }
+      },
       // {
       //   src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/iscroll.js'
       // }
-      // {
-      //   src: '~/plugins/hotjar.js'
-      // }
+      {
+        src: '/hotjar.js'
+      }
     ]
   },
   /*
@@ -139,7 +139,7 @@ module.exports = {
     '@nuxtjs/google-analytics'
   ],
   googleAnalytics: {
-    id: 'UA-ddsad',
+    id: 'UA-165914173-1',
     debug: {
       sendHitTask: true
     }
@@ -158,10 +158,7 @@ module.exports = {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
-  router: {
-    base: '/birthday/'
-  },
+  // axios: {},
   // ...routerBase,
   /*
    ** Build configuration
