@@ -19,7 +19,7 @@ export default {
   },
   data() {
     return {
-      isLoaded: true
+      isLoaded: false
     }
   },
   mounted() {

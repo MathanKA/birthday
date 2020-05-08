@@ -6,7 +6,7 @@
 
 <script>
 /* eslint-disable */
-const BalloonInit = require('@/assets/scripts/balloons.js')
+const BalloonInit = require('@/static/balloons.js')
 export default {
   props: {
     releaseBalloons: {

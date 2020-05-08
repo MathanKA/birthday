@@ -103,6 +103,27 @@
   top: 0;
 }
 .b-cake {
+  &:before {
+    background-image: url('~static/arrow.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    content: '';
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    left: 53%;
+    top: -40px;
+    transform: rotate(135deg);
+  }
+  &:after {
+    content: 'Blow Me';
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    left: 65%;
+    top: -25px;
+  }
   position: relative;
   img {
     height: 500px;
@@ -115,7 +136,7 @@
     background: #03a9f4;
     border-radius: 10px;
     position: absolute;
-    top: 85px;
+    top: 30px;
     left: 50%;
     margin-left: -2.4px;
     margin-top: -8.33333333px;

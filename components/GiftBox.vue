@@ -73,5 +73,19 @@
 </template>
 
 <script>
-export default {}
+export default {
+  mounted() {},
+  head() {
+    return {
+      script: [
+        {
+          src: '/iscroll.js'
+        },
+        {
+          src: '/giftbox.js'
+        }
+      ]
+    }
+  }
+}
 </script>

@@ -54,7 +54,7 @@ export default {
     loadText() {
       const text =
         this.loaded <= 40
-          ? 'Wait, Floor is getting ready for birthday baby...'
+          ? 'Wait, Stage is getting ready for birthday baby...'
           : this.loaded > 41 && this.loaded < 80
           ? 'meanwhile, Show me your Bday dress'
           : this.loaded > 81

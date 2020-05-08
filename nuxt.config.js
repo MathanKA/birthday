@@ -24,51 +24,51 @@ module.exports = {
       {
         hid: 'title',
         name: 'title',
-        content: 'Happy Birthday, Amit!'
+        content: '🎂Happy Birthday,Amit! 🥳🎉'
       },
       {
         hid: 'description',
         name: 'description',
         content:
-          'Hi baby, Its your birthday and here a small gift for you. Check it out...'
+          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
       },
       {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'Hi baby, Its your birthday and here a small gift for you. Check it out...'
+          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Hi baby, Its your birthday and here a small gift for you. Check it out...'
+          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Hi baby, Its your birthday and here a small gift for you. Check it out...'
+          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
       },
       // { hid: 'og:image', property: 'og:image', content: meta.image },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Happy Birthday, Amit!'
+        content: '🎂Happy Birthday,Amit! 🥳🎉'
       },
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Happy Birthday, Amit!'
+        content: '🎂Happy Birthday,Amit! 🥳🎉'
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Hi baby, Its your birthday and here a small gift for you. Check it out...'
+          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
       }
     ],
-    title: 'Happy Birthday,Amit!',
+    title: '🎂Happy Birthday,Amit! 🥳🎉',
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       {
@@ -96,10 +96,10 @@ module.exports = {
       {
         src:
           'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/jquery.superscrollorama.js'
-      },
-      {
-        src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/iscroll.js'
       }
+      // {
+      //   src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/iscroll.js'
+      // }
       // {
       //   src: '~/plugins/hotjar.js'
       // }
@@ -120,11 +120,11 @@ module.exports = {
     {
       src: '~/plugins/dom-confetti.js',
       mode: 'client'
-    },
-    {
-      src: '~/assets/scripts/giftbox.js',
-      mode: 'client'
     }
+    // {
+    //   src: '~/assets/scripts/giftbox.js',
+    //   mode: 'client'
+    // }
     // {
     //   src: '~/plugins/balloons.js',
     //   mode: 'client'
