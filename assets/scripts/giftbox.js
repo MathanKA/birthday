@@ -12,7 +12,7 @@
     }
 
     Main.prototype.vars = function() {
-      this.frameDur = 1500;
+      this.frameDur = 12000;
       this.$cover = $('#js-cover');
       this.$coverPlace = $('#js-cover-place');
       this.$icon1 = $('#js-icon1 .box-icon__content');

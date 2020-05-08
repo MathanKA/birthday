@@ -56,9 +56,9 @@ export default {
         this.loaded <= 40
           ? 'Wait, Floor is getting ready for birthday baby...'
           : this.loaded > 41 && this.loaded < 80
-          ? 'meanwhile, tell me Is it true that ?'
+          ? 'meanwhile, Show me your Bday dress'
           : this.loaded > 81
-          ? 'Here we go, for my birthday baby...'
+          ? 'Okay, Here we go...'
           : ''
       return text
     },

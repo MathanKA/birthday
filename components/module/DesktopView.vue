@@ -36,30 +36,31 @@
             <photo-booth></photo-booth>
           </b-col>
           <b-col cols="4" class="align-self-center">
-            <p class="text-left" data-aos="slide-left">
+            <p class="text-center" data-aos="slide-left">
               <span style="font-size: 2rem;">&ldquo;</span>Sometimes, we may
-              feel who we are, who we want to be, where exactly we supposed to
-              be. but if you notice closely, everything will make sense.<span
-                style="font-size: 2rem;"
-                >&rdquo;</span
-              >
+              feel like who we are, who we want to be or <br />
+              where exactly we supposed to be. <br />
+              Always remember Someday everthing will make sense.
+              <br />
+              Happy Birthday to the Beautiful Soul!
+              <span style="font-size: 2rem;">&rdquo;</span>
             </p>
           </b-col>
         </b-row>
       </b-container>
     </section>
-    <section id="b-wheel">
+    <section id="giftbox">
+      <gift-box></gift-box>
+    </section>
+    <!-- <section id="b-wheel" style="height: 800px;">
       <b-container>
         <b-row>
           <b-col cols="6" class="justify-content-center">
-            <!-- <wheel-spin></wheel-spin> -->
+            <wheel-spin></wheel-spin> 
           </b-col>
         </b-row>
       </b-container>
-    </section>
-    <section class="position-relative">
-      <gift-box></gift-box>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -69,8 +70,8 @@ import Cake from '@/components/Cake'
 import PhotoBooth from '@/components/PhotoBooth'
 import Wish from '@/components/Wish'
 import GiftBox from '@/components/GiftBox'
-// import WheelSpin from '@/components/WheelSpin'
 // import Balloons from '@/components/Balloons'
+// import WheelSpin from '@/components/WheelSpin'
 export default {
   components: {
     'wind-banners': () => import('@/components/WindBanners.vue'),

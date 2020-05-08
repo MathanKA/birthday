@@ -100,6 +100,9 @@ module.exports = {
       {
         src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/iscroll.js'
       }
+      // {
+      //   src: '~/plugins/hotjar.js'
+      // }
     ]
   },
   /*
@@ -132,8 +135,15 @@ module.exports = {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/google-analytics'
   ],
+  googleAnalytics: {
+    id: 'UA-ddsad',
+    debug: {
+      sendHitTask: true
+    }
+  },
   /*
    ** Nuxt.js modules
    */

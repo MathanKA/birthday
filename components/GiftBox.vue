@@ -9,6 +9,14 @@
         <div class="box__item box__item--bottom"></div>
         <div class="box__item box__item--shadow"></div>
       </div>
+      <div class="box-icon">
+        <p class="b-text-dark">
+          People say a good Whatver I am for you is the best gift you could ever
+          had. So here I am for you. PS: I plan to wrap myself and tie the top
+          with ribbon.
+        </p>
+      </div>
+
       <div id="js-cover-place" class="cover-place">
         <div id="js-cover" class="cover">
           <div class="cover__item cover__item--base">
@@ -46,10 +54,9 @@
               <div class="thread-right__content"></div>
             </div>
           </div>
-          <a id="js-tag" href="http://blog.legomushroom.com" class="tag">
+          <a id="js-tag" href="" class="tag">
             <div class="tag__content"></div>
-            <div class="tag__text">blog.legomushroom.com</div></a
-          >
+          </a>
         </div>
       </div>
       <div id="js-scroll-suggest" class="scroll-suggest">

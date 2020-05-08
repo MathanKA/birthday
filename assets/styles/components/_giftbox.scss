@@ -70,7 +70,7 @@
 }
 
 .tag__content {
-  padding-bottom: 180%
+  padding-bottom: 180%;
 }
 
 .tag__text {
@@ -184,12 +184,12 @@
 }
 
 .box-icon {
-  width: 7.5%;
+  width: 70%;
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -3.75%
+  top: 40%;
+  left: 15%;
+  margin-top: -3.75%;
 }
 
 .box-icon--one {
@@ -416,6 +416,12 @@
   height: 100%
 }
 
+#giftbox {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
 .cover-place {
   position: absolute;
   top: 0;
