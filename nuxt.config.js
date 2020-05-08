@@ -1,11 +1,11 @@
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/birthday/'
-        }
-      }
-    : {}
+// const routerBase =
+//   process.env.DEPLOY_ENV === 'GH_PAGES'
+//     ? {
+//         router: {
+//           base: '/birthday/'
+//         }
+//       }
+//     : {}
 
 module.exports = {
   mode: 'universal',
@@ -159,7 +159,10 @@ module.exports = {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
-  ...routerBase,
+  router: {
+    base: '/birthday/'
+  },
+  // ...routerBase,
   /*
    ** Build configuration
    */
