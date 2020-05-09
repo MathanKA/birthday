@@ -15,8 +15,22 @@
   }
 }
 
+@media (min-width: 421px) and (max-width: 991px) {
+  .mobile {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .mobile {
+    height: 100%;
+  }
+}
+
+
 .mobile {
-  height: calc(100vh - 53px);
+  // height: calc(100vh - 53px);
+  // height: 100%;
   h1 {
     line-height: 1.5;
   }
