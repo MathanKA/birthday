@@ -79,9 +79,6 @@ export default {
     return {
       script: [
         {
-          src: '/iscroll.js'
-        },
-        {
           src: '/giftbox.js',
           defer: true
         }

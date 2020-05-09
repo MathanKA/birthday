@@ -39,22 +39,9 @@ module.exports = {
           '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
       },
       {
-        hid: 'og:description',
-        property: 'og:description',
-        content:
-          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content:
-          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
-      },
-      // { hid: 'og:image', property: 'og:image', content: meta.image },
-      {
-        hid: 'og:title',
-        property: 'og:title',
-        content: '🎂Happy Birthday,Amit! 🥳🎉'
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary'
       },
       {
         hid: 'twitter:title',
@@ -66,6 +53,27 @@ module.exports = {
         name: 'twitter:description',
         content:
           '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
+      },
+      {
+        hid: 'twitter:image:src',
+        name: 'twitter:image:src',
+        content: '/social.png'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: '🎂Happy Birthday,Amit! 🥳🎉'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/social.png'
       }
     ],
     title: '🎂Happy Birthday,Amit! 🥳🎉',
@@ -88,14 +96,23 @@ module.exports = {
     ],
     script: [
       {
-        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'
+        src: '/jquery.js'
       },
       {
-        src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/tweenmax.min.js'
+        src: '/tweenmax.js'
       },
       {
-        src:
-          'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/jquery.superscrollorama.js'
+        src: 'superscrollorama.js'
+      },
+      // {
+      //   src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/tweenmax.min.js'
+      // },
+      // {
+      //   src:
+      //     'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/jquery.superscrollorama.js'
+      // },
+      {
+        src: '/iscroll.js'
       },
       // {
       //   src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/iscroll.js'
