@@ -21,6 +21,9 @@
           {{ loaded }} %
         </div>
       </div>
+      <p class="browser-warning">
+        Please view in chrome browser for better experience
+      </p>
     </div>
   </div>
 </template>

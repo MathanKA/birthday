@@ -1,17 +1,32 @@
 <template>
   <div>
-    <desktop-view class="desktop"> </desktop-view>
-    <mobile-view class="mobile"></mobile-view>
+    <desktop-view v-if="isLoaded"> </desktop-view>
+    <b-loader v-else @loaded="isLoaded = true"></b-loader>
   </div>
 </template>
 
 <script>
+import AOS from 'aos'
+
+// import BFooter from '@/components/BFooter'
 import DesktopView from '@/components/module/DesktopView'
-import MobileView from '@/components/module/MobileView'
+import BLoader from '@/components/BLoader'
+// import BFooter from '@/components/BFooter'
 export default {
   components: {
     DesktopView,
-    MobileView
+    BLoader
+    // BFooter
+  },
+  data() {
+    return {
+      isLoaded: false
+    }
+  },
+  mounted() {
+    AOS.init({
+      offset: 200
+    })
   }
 }
 </script>

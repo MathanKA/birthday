@@ -1,32 +1,33 @@
 <template>
   <div>
-    <main v-if="isLoaded">
-      <nuxt />
+    <main>
+      <nuxt class="desktop" />
+      <mobile-view class="mobile"></mobile-view>
       <b-footer></b-footer>
     </main>
-    <b-loader v-else @loaded="isLoaded = true"></b-loader>
   </div>
 </template>
 
 <script>
-import AOS from 'aos'
+// import AOS from 'aos'
+// import BLoader from '@/components/BLoader'
+
 import BFooter from '@/components/BFooter'
-import BLoader from '@/components/BLoader'
+import MobileView from '@/components/module/MobileView'
 export default {
   components: {
     BFooter,
-    BLoader
+    MobileView
+    // BLoader
   },
   data() {
-    return {
-      isLoaded: false
-    }
-  },
-  mounted() {
-    AOS.init({
-      offset: 200
-    })
+    return {}
   }
+  // mounted() {
+  //   AOS.init({
+  //     offset: 200
+  //   })
+  // }
 }
 </script>
 

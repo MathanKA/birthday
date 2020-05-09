@@ -15,9 +15,15 @@
         </b-row>
       </b-container>
     </section>
+    <!-- <b-footer></b-footer> -->
   </div>
 </template>
 
 <script>
-export default {}
+// import BFooter from '@/components/BFooter'
+export default {
+  components: {
+    // BFooter
+  }
+}
 </script>

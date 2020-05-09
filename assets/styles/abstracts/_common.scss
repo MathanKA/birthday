@@ -16,10 +16,17 @@
 }
 
 .mobile {
-  height: calc(100vh - 40px);
+  height: calc(100vh - 53px);
   h1 {
     line-height: 1.5;
   }
+}
+
+.browser-warning {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
 }
 
 #b-intro {
