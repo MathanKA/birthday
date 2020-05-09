@@ -22,7 +22,7 @@
         </div>
       </div>
       <p class="browser-warning">
-        Please view in chrome browser for better experience
+        Please view in chrome browser & volume up 😊
       </p>
     </div>
   </div>
@@ -57,11 +57,11 @@ export default {
     loadText() {
       const text =
         this.loaded <= 40
-          ? 'Wait, Stage is getting ready for birthday baby...'
+          ? '🤚 Wait, Stage is getting ready for birthday baby...'
           : this.loaded > 41 && this.loaded < 80
-          ? 'meanwhile, Show me your Birth day dress'
+          ? 'meanwhile, Show me your Birth 👼 day dress'
           : this.loaded > 81
-          ? 'Okay, Here we go...'
+          ? 'Okay, Here we go...🥳🥳'
           : ''
       return text
     },

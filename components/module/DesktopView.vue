@@ -4,6 +4,7 @@
       <client-only>
         <wind-banners></wind-banners>
       </client-only>
+
       <b-container fluid>
         <b-row>
           <b-col cols="2">
@@ -87,6 +88,7 @@ export default {
   data() {
     return { releaseBalloons: false }
   },
+
   methods: {
     triggerBalloons() {
       this.releaseBalloons = !this.releaseBalloons

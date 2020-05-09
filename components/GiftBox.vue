@@ -11,9 +11,8 @@
       </div>
       <div class="box-icon">
         <p class="b-text-dark">
-          People say a good Whatver I am for you is the best gift you could ever
-          had. So here I am for you. PS: I plan to wrap myself and tie the top
-          with ribbon.
+          I know I cannot make you happy with things, All I can give you is
+          myself. I would love to be your happiness...
         </p>
       </div>
 

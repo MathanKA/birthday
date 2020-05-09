@@ -17,6 +17,9 @@
       </div>
       <b-img src="~/static/cake.svg"></b-img>
     </div>
+    <audio id="HBD">
+      <source :src="require('~/static/hbd-music.mp3')" type="audio/mpeg" />
+    </audio>
   </div>
 </template>
 
@@ -51,12 +54,17 @@ export default {
       this.isFireOn = !this.isFireOn
 
       if (!this.isFireOn) {
+        this.playMusic()
         this.initFireConfetti()
         this.$emit('releaseBalloons')
         setTimeout(() => {
           this.$emit('releaseBalloons')
         }, 20000)
       }
+    },
+    playMusic() {
+      const musicStart = document.getElementById('HBD')
+      musicStart.play()
     },
     initFireConfetti() {
       const ele = document.getElementById('fireConfetti')

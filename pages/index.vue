@@ -24,6 +24,8 @@ export default {
     }
   },
   mounted() {
+    // setTimeout(() => {
+    // }, 1000)
     AOS.init({
       offset: 200
     })
