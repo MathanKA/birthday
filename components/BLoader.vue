@@ -59,7 +59,7 @@ export default {
         this.loaded <= 40
           ? 'Wait, Stage is getting ready for birthday baby...'
           : this.loaded > 41 && this.loaded < 80
-          ? 'meanwhile, Show me your Bday dress'
+          ? 'meanwhile, Show me your Birth day dress'
           : this.loaded > 81
           ? 'Okay, Here we go...'
           : ''
