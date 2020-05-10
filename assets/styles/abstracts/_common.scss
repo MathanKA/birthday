@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
   .desktop {
     display: block;
   }
@@ -6,7 +6,7 @@
     display: none;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1279px) {
   .desktop {
     display: none;
   }
@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: 421px) and (max-width: 991px) {
+@media (min-width: 421px) and (max-width: 1279px) {
   .mobile {
     height: 100vh;
   }
@@ -72,14 +72,14 @@
     background-image: url('~static/wave-green.svg');
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: auto;
+    background-size: cover;
     position: absolute;
     left: 0;
     line-height: 0;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
     pointer-events: none;
-    top: -27%;
+    top: -28%;
     content: '';
     height: 200px;
     width: 100%;
