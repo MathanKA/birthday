@@ -30,13 +30,13 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content:
-          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
+          '🎉Hi, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
       },
       {
         hid: 'keywords',
         name: 'keywords',
         content:
-          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
+          '🎉Hi, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
       },
       {
         hid: 'twitter:card',
@@ -52,7 +52,7 @@ module.exports = {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
+          '🎉Hi , Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
       },
       {
         hid: 'twitter:image:src',
@@ -68,7 +68,7 @@ module.exports = {
         hid: 'og:description',
         property: 'og:description',
         content:
-          '🎉Hi baby, Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
+          '🎉Hi , Its your birthday and here a small gift 🎁 for you. Check it out...🎉'
       },
       {
         hid: 'og:image',

@@ -33,12 +33,12 @@
             paint-order="stroke fill"
             text-anchor="middle"
           >
-            my baby
+            To you
           </text>
         </symbol>
         <symbol id="fill">
           <text x="50%" y="30%" text-anchor="middle">Happy Birthday</text>
-          <text x="50%" y="73%" text-anchor="middle">my baby</text>
+          <text x="50%" y="73%" text-anchor="middle">To you</text>
         </symbol>
       </defs>
       <g class="svg-text__shaded__stroke" stroke="#00cccc">

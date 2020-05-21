@@ -38,12 +38,7 @@
           </b-col>
           <b-col cols="4" class="align-self-center">
             <p class="text-center" data-aos="slide-left">
-              <span style="font-size: 2rem;">&ldquo;</span>Sometimes, we may
-              feel like who we are, who we want to be or <br />
-              where exactly we supposed to be. <br />
-              Always remember Someday everthing will make sense.
-              <br />
-              Happy Birthday to a Beautiful Soul!
+              <span style="font-size: 2rem;">&ldquo;</span>Happy Birthday!!!
               <span style="font-size: 2rem;">&rdquo;</span>
             </p>
           </b-col>

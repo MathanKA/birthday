@@ -11,8 +11,7 @@
       </div>
       <div class="box-icon">
         <p class="b-text-dark">
-          I know I cannot make you happy with things, All I can give you is
-          myself. I would love to be your happiness...
+          Here is your gift...
         </p>
       </div>
 

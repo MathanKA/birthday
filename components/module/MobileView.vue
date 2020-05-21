@@ -5,7 +5,7 @@
         <b-row class="h-100">
           <b-col class="text-center align-self-center">
             <h1>
-              Hey Baby, <br />
+              Hey, <br />
               Seems you are viewing in small device <br />
               Sorry, this small space is not enough to celebrate your
               "Birthday"<br />
