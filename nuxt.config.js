@@ -1,14 +1,15 @@
-// const routerBase =
-//   process.env.DEPLOY_ENV === 'GH_PAGES'
-//     ? {
-//         router: {
-//           base: '/birthday/'
-//         }
-//       }
-//     : {}
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/birthday/'
+        }
+      }
+    : {}
 
 module.exports = {
   mode: 'universal',
+  ...routerBase,
   /*
    ** Headers of the page
    */
@@ -176,7 +177,6 @@ module.exports = {
    ** See https://axios.nuxtjs.org/options
    */
   // axios: {},
-  // ...routerBase,
   /*
    ** Build configuration
    */
