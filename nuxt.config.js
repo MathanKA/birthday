@@ -1,15 +1,15 @@
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/birthday/'
-        }
-      }
-    : {}
+// const routerBase =
+//   process.env.DEPLOY_ENV === 'GH_PAGES'
+//     ? {
+//         router: {
+//           base: '/birthday/'
+//         }
+//       }
+//     : {}
 
 module.exports = {
   mode: 'universal',
-  ...routerBase,
+  // ...routerBase,
   /*
    ** Headers of the page
    */
@@ -123,6 +123,7 @@ module.exports = {
       }
     ]
   },
+  router: { base: '/birthday/' },
   /*
    ** Customize the progress-bar color
    */
