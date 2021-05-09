@@ -17,16 +17,18 @@
       </div>
       <b-img src="~/static/cake.svg"></b-img>
     </div>
-    <audio id="HBD">
-      <source :src="require('~/static/hbd-music.mp3')" type="audio/mpeg" />
+    <audio id="HBD" ref="bdayMusic" preload="metadata">
+      <source :src="bdayMusic" type="audio/mpeg" />
     </audio>
   </div>
 </template>
 
 <script>
+const bdayMusic = require('~/static/hbd-music.mp3')
 export default {
   data() {
     return {
+      bdayMusic,
       isFireOn: true,
       confetti_colors: [
         '#E68F17',
@@ -63,8 +65,9 @@ export default {
       }
     },
     playMusic() {
-      const musicStart = document.getElementById('HBD')
-      musicStart.play()
+      // const musicStart = document.getElementById('HBD')
+      // console.log(this.$refs.bdayMusic)
+      this.$refs.bdayMusic.play()
     },
     initFireConfetti() {
       const ele = document.getElementById('fireConfetti')

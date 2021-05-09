@@ -27,7 +27,6 @@
   }
 }
 
-
 .mobile {
   // height: calc(100vh - 53px);
   // height: 100%;
@@ -79,10 +78,16 @@
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
     pointer-events: none;
-    top: -28%;
+    top: -26%;
     content: '';
     height: 200px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1339px) {
+  #b-info:before {
+    top: -21%;
   }
 }
 
@@ -96,7 +101,7 @@
   //   #6dcbcc,
   //   #74d1d2
   // );
-  background-color: #EFA4A5;
+  background-color: #efa4a5;
   padding: 5rem 0rem;
   &:before {
     background-image: url('~static/wave-wax.svg');
@@ -135,10 +140,10 @@
     position: absolute;
     left: 53%;
     top: -40px;
-    transform: rotate(135deg); 
+    transform: rotate(135deg);
   }
   &:after {
-    content: 'Blow Me';
+    content: 'blow me';
     height: 70px;
     width: 100px;
     position: absolute;
@@ -278,35 +283,27 @@
   }
 }
 
-
 .heart {
   animation: heartbeat 2s infinite;
   transition: all 0.3s linear;
 }
-@keyframes heartbeat
-{
-  0%
-  {
-    transform: scale( .75 );
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
   }
-  20%
-  {
-    transform: scale( 1 );
+  20% {
+    transform: scale(1);
   }
-  40%
-  {
-    transform: scale( .75 );
+  40% {
+    transform: scale(0.75);
   }
-  60%
-  {
-    transform: scale( 1 );
+  60% {
+    transform: scale(1);
   }
-  80%
-  {
-    transform: scale( .75 );
+  80% {
+    transform: scale(0.75);
   }
-  100%
-  {
-    transform: scale( .75 );
+  100% {
+    transform: scale(0.75);
   }
 }

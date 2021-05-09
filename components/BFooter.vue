@@ -4,12 +4,11 @@
       <b-row>
         <b-col class="text-center">
           <h6 class="mb-0 py-2">
-            Developed with
             <b-img
               class="d-inline heart"
               src="~/static/heart.svg"
               fluid
-              style="width: 25px;"
+              style="width: 25px"
             ></b-img>
           </h6>
         </b-col>

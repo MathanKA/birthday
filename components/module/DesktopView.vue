@@ -38,16 +38,21 @@
           </b-col>
           <b-col cols="4" class="align-self-center">
             <p class="text-center" data-aos="slide-left">
-              <span style="font-size: 2rem;">&ldquo;</span>Happy Birthday!!!
-              <span style="font-size: 2rem;">&rdquo;</span>
+              <span style="font-size: 2rem">&ldquo;</span>
+              You are my sunshine who starts my day <br />
+              You are my fresh blossom who makes me smile<br />
+              you are the exuberant gentle breeze who makes me chill<br />
+              Every moment, I crave to live with you. <br />Happy Birthday to
+              the wonderful person!
+              <span style="font-size: 2rem">&rdquo;</span>
             </p>
           </b-col>
         </b-row>
       </b-container>
     </section>
-    <section id="giftbox">
+    <!-- <section id="giftbox">
       <gift-box></gift-box>
-    </section>
+    </section> -->
     <!-- <section id="b-wheel" style="height: 800px;">
       <b-container>
         <b-row>
@@ -65,7 +70,7 @@ import BalloonGroup from '@/components/BalloonGroup'
 import Cake from '@/components/Cake'
 import PhotoBooth from '@/components/PhotoBooth'
 import Wish from '@/components/Wish'
-import GiftBox from '@/components/GiftBox'
+// import GiftBox from '@/components/GiftBox'
 // import Balloons from '@/components/Balloons'
 // import WheelSpin from '@/components/WheelSpin'
 export default {
@@ -76,8 +81,8 @@ export default {
     BalloonGroup,
     Cake,
     PhotoBooth,
-    Wish,
-    GiftBox
+    Wish
+    // GiftBox
     // WheelSpin
   },
   data() {

@@ -9,6 +9,7 @@
 
 module.exports = {
   mode: 'universal',
+  telemetry: false,
   // ...routerBase,
   /*
    ** Headers of the page

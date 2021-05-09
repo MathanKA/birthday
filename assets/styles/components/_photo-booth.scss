@@ -18,7 +18,7 @@
     background-size: 100%;
     position: absolute;
     left: 35%;
-    top: -5%;
+    top: 5%;
     content: '';
     height: 140px;
     width: 125px;
@@ -27,7 +27,7 @@
   background-image: url('~static/photo-frame.svg');
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: 100%;
+  background-size: contain;
   position: relative;
   height: 550px;
   width: 90%;
@@ -44,7 +44,7 @@
 
 .photo {
   position: absolute;
-  height: 380px;
+  height: 420px;
   width: auto;
   left: 25%;
   top: 10%;

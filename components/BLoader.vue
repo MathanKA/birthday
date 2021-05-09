@@ -21,9 +21,7 @@
           {{ loaded }} %
         </div>
       </div>
-      <p class="browser-warning">
-        Please view in chrome browser & volume up 😊
-      </p>
+      <p class="browser-warning">Please view in chrome browser 😊</p>
     </div>
   </div>
 </template>
@@ -69,7 +67,7 @@ export default {
       document.querySelector('body').style.overflowX = 'hidden'
     },
     startLoading() {
-      this.loading = setInterval(this.load, 50)
+      this.loading = setInterval(this.load, 10)
     },
     load() {
       this.loaded < 100 ? this.loaded++ : this.doneLoading()
@@ -91,13 +89,13 @@ export default {
         'margin-top': `-${height}`
       }
       const options = {
-        duration: 1000,
+        duration: 100,
         easing: 'swing',
         complete() {
           app.removePreloader()
         }
       }
-      this.preloader.delay(500).animate(properties, options)
+      this.preloader.delay(100).animate(properties, options)
     },
     removePreloader() {
       this.preloader.remove()
